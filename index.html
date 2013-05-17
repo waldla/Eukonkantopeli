@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Studio2-peli</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body onclick="player.startJump()">
+  <canvas id='canvas'></canvas>
+	<!--Laitetaan linkkaus script-tiedostoon bodyn sisälle, jotta canvas on ehtinyt
+latautua ennen kuin se ja gameloop käynistetään.-->
+
+	<audio id="blop" src="images/sound.wav" type="audio/wav codecs='vorbis'"
+		preload="auto"> Your browser does not support HTML5 audio-tag.</audio>
+
+	<audio id="auts" src="images/pain.wav" type="audio/wav codecs='vorbis'"
+		preload="auto"> Your browser does not support HTML5 audio-tag.</audio>
+
+	<div id="points"></div>
+	<script src="script.js"></script>
+</body>
+</html>
